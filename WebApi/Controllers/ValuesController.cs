@@ -14,7 +14,7 @@ namespace WebApi.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    [EnableCors("AllowOrigin")]
+    [EnableCors]
 
 
     public class ValuesController : ControllerBase
@@ -49,18 +49,22 @@ namespace WebApi.Controllers
         // POST api/<ValuesController>
         [HttpPost]
         [Route("CreateCustomer")]
-        public ActionResult Create([FromBody] Customer value)
+        public ActionResult Create(Customer value)
         {
 
-            if (value != null) { customers.Add(value); return Ok("added"); }
+            int count = customers.Count();
+            count++;
+            value.id = count;
+            customers.Add(value);
 
-            else return BadRequest("not added");
+            return Ok("Added");
+
         }
 
         // PUT api/<ValuesController>/5
         [HttpPut]
         [Route("UpdateData")]
-        public ActionResult Put(int id, [FromBody] Customer value)
+        public ActionResult Put(int id,[FromBody] Customer value)
         {
             int index = customers.FindIndex(o => o.id == id);
             customers[index].id = value.id;
