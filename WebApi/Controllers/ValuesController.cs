@@ -49,12 +49,12 @@ namespace WebApi.Controllers
         // POST api/<ValuesController>
         [HttpPost]
         [Route("CreateCustomer")]
-        public ActionResult Create(Customer value)
+        public ActionResult Create([FromBody]Customer value)
         {
 
-            int count = customers.Count();
-            count++;
-            value.id = count;
+            //string count = customers.Count().ToString;
+            //count++;
+            //value.id = count;
             customers.Add(value);
 
             return Ok("Added");
@@ -64,7 +64,7 @@ namespace WebApi.Controllers
         // PUT api/<ValuesController>/5
         [HttpPut]
         [Route("UpdateData")]
-        public ActionResult Put(int id,[FromBody] Customer value)
+        public ActionResult Put(int id,Customer value)
         {
             int index = customers.FindIndex(o => o.id == id);
             customers[index].id = value.id;
