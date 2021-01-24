@@ -64,10 +64,10 @@ namespace WebApi.Controllers
         // PUT api/<ValuesController>/5
         [HttpPut]
         [Route("UpdateData")]
-        public ActionResult Put(int id,Customer value)
+        public ActionResult Put([FromBody]Customer value)
         {
-            int index = customers.FindIndex(o => o.id == id);
-            customers[index].id = value.id;
+            int index = customers.FindIndex(o => o.id == value.id);
+            //customers[index].id = value.id;
             customers[index].firstName = value.firstName; 
             customers[index].lastName = value.lastName; 
             customers[index].address = value.address; 
