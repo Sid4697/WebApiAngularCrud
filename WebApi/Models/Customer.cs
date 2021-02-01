@@ -15,6 +15,6 @@ namespace WebApi.Models
         public string email { get; set; }
         public string city { get; set; }
         public string state { get; set; }
-        public int orderTotal { get; set; }
+        public string country { get; set; }
     }
 }

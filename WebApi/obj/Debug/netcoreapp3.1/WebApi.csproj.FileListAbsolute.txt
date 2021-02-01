@@ -14,6 +14,7 @@ G:\Web Api\WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 G:\Web Api\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 G:\Web Api\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 G:\Web Api\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\Web Api\WebApi\obj\Debug\netcoreapp3.1\WebApi.csprojAssemblyReference.cache
 G:\Web Api\WebApi\obj\Debug\netcoreapp3.1\WebApi.AssemblyInfoInputs.cache
 G:\Web Api\WebApi\obj\Debug\netcoreapp3.1\WebApi.AssemblyInfo.cs
 G:\Web Api\WebApi\obj\Debug\netcoreapp3.1\WebApi.csproj.CoreCompileInputs.cache
@@ -26,4 +27,3 @@ G:\Web Api\WebApi\obj\Debug\netcoreapp3.1\staticwebassets\WebApi.StaticWebAssets
 G:\Web Api\WebApi\obj\Debug\netcoreapp3.1\WebApi.dll
 G:\Web Api\WebApi\obj\Debug\netcoreapp3.1\WebApi.pdb
 G:\Web Api\WebApi\obj\Debug\netcoreapp3.1\WebApi.genruntimeconfig.cache
-G:\Web Api\WebApi\obj\Debug\netcoreapp3.1\WebApi.csprojAssemblyReference.cache

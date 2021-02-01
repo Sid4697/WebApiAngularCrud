@@ -22,11 +22,11 @@ namespace WebApi.Controllers
         public static List<Customer> customers = new List<Customer>()
         {
             new Customer {id=1,firstName="Siddhant",lastName="Tiwari",address="C-78",
-                gender="Male",email="abc@123.com",city="Modinagar",state="U.P",orderTotal=20000},
+                gender="Male",email="abc@123.com",city="Modinagar",state="U.P",country="India"},
             new Customer {id=2,firstName="Abhishek",lastName="Tyagi",address="H-420",
-                gender="Male",email="abc@123.com",city="Modinagar",state="U.P",orderTotal=20000},
+                gender="Male",email="abc@123.com",city="Modinagar",state="U.P",country="USA"},
             new Customer {id=3,firstName="Kajal",lastName="Kaushik",address="M-203",
-                gender="Female",email="abc@123.com",city="New Delhi",state="Delhi",orderTotal=20000}
+                gender="Female",email="abc@123.com",city="New Delhi",state="Delhi",country="Ireland"}
         };
     
     // GET: api/<ValuesController>
@@ -74,7 +74,7 @@ namespace WebApi.Controllers
             customers[index].gender = value.gender;
             customers[index].city = value.city;
             customers[index].state = value.state;
-            customers[index].orderTotal = value.orderTotal;
+            customers[index].country = value.country;
 
             return Ok("updated");
         }
